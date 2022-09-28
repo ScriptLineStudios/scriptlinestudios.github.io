@@ -1,13 +1,125 @@
 <!DOCTYPE html>
-<head>
-    <link rel="stylesheet" type="text/css" href="style.css" media=”screen” />
-</head>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ScriptLine Studios</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css" media=”screen” />
+        <style>
+            .center
+            {
+                font-family:    Arial, Helvetica, sans-serif;
+                font-size:      40px;
+                font-weight:    bold;
+            }
+            body 
+            { 
+                color: #ffffff;
+            }
+            html *
+            {
+                color: rgb(255, 255, 255) !important;
+                font-family: 'Press Start 2P', cursive !important;
+            }
+            img 
+            {
+                border-radius: 10%;
+            }
+             /* Three image containers (use 25% for four, and 50% for two, etc) */
+            .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+            }
 
-<body>
-    <div class="hero-image">
-        <div class="hero-text">
-          <h1>ScriptLine Studios</h1>
-          <p>I like programming</p>
+            /* Clear floats after image containers */
+            .row::after {
+            content: "";
+            clear: both;
+            display: table;
+            } 
+        </style>
+    </head>
+
+    <body style= "background-color: #0d1117">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>    
+                </ul>
+            </div>  
+        </nav>
+
+        <div class="center" style="margin-bottom:0; text-align: center; background-color:#0d1117">
+            <img src="static/main.png"
+            width="1024" 
+            height="200">
         </div>
-      </div> 
-</body>
+
+        <div class="container" style="margin-top:0px">
+            <div class="center" style="text-align: center">
+                <h2>Welcome</h2>
+                    <div class="br" style="display: block; margin: 40px 0;">
+                        <h6>I'm a programming and gamedev hobbyist who has</h6>
+                        <h6>been programming for 4 years.</h6>
+                        <h6>I mainly make stuff using Python and Pygame</h6>
+                        <h6>but also have experience using other languages and libraries.</h6>
+                    </div>
+                <h2>My favorite projects</h2>
+                <br></br>
+            </div>
+
+            <div class="br" style="display: block; margin: -90px 0;">
+                <div class="row">
+                    <div class="column">
+                        <a href="https://scriptline-studios.itch.io/planyt">
+                            <img src="static/planyt.png">
+                        </a>
+                    </div>
+                    <div class="column">
+                        <a href="https://github.com/ScriptLineStudios/pygame_shaders">
+                            <img src="static/pygame_shaders.png">
+                        </a>
+                    </div>
+                    <div class="column">
+                        <a href="">
+                            <img src="static/8_bit_cpu.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="br" style="display: block; margin: 90px 0;">
+                <div class="row">
+                    <div class="column">
+                        <a href="https://discordbotlist.com/bots/discord-canvas">
+                            <img src="static/discord_canvas.png" width="290" height="229">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+        </div>
+    </body>
+</html>
